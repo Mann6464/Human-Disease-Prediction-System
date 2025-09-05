@@ -1,10 +1,26 @@
-# Human-Disease-Prediction-System
-The Human Disease Prediction System is an intelligent machine learning–based application developed to assist in the early identification of health risks and diseases such as COVID-19, diabetes, and heart disease. The main purpose of this project is to provide individuals with a fast, accessible, and reliable way to assess their health conditions by analyzing symptoms and medical data, thereby helping in timely diagnosis and prevention.
+# Medical-Predictions-Streamlit-Web-App
 
-The system works by allowing users to input their health-related information, including symptoms, lifestyle patterns, and medical history. Once the data is entered, it is processed using trained machine learning algorithms such as Random Forest, Support Vector Machines (SVM), and Naïve Bayes classifiers. These algorithms are capable of identifying hidden patterns in the data and predicting the likelihood of a disease with significant accuracy. The outcome is presented to the user in an easy-to-understand format, along with the probability of being affected by the specific condition.
+This app is used to predict the medical state of an individual
+The disease sections include ->
+1. Covid-19
+2. Diabetes
+3. Heart Disease 
 
-A web-based interface has been integrated into the system to enhance usability and accessibility. Users can access the platform through a browser, upload or enter their health details, and instantly receive predictions. Additionally, the interface is designed to be user-friendly, with clear navigation and interactive elements to make the process simple even for non-technical users.
 
-One of the key features of the system is its ability to handle multiple diseases. Instead of being restricted to a single illness, it provides predictions for three major health concerns—COVID-19, diabetes, and heart disease. These diseases were chosen due to their global impact and the importance of early detection in reducing complications. The system highlights potential risks, encouraging users to take preventive measures and seek medical advice if necessary.
+Each prediction page is conneceted with a Machine Learning Model which uses Random Forest Classifier to predict the results.
+Also we have 3 different datasets used for each prediction.
+We can land into each prediction site of the web app from the options in the Navigation Menu.
 
-In conclusion, the Human Disease Prediction System serves as a supportive health tool that combines technology and healthcare. By integrating machine learning models with an accessible user interface, it empowers individuals to monitor their health proactively, reduces dependency on immediate medical testing, and promotes awareness about critical diseases.
+
+Each prediction is done with the help of 4 features which will be taken as input from the user.
+The most relevant features are taken into consideration for prediction also these features can be found out with simple tests or analysis without visiting any doctor.
+So the victim can get a broad overview of their health condition.
+The features taken into consideration are as follows=
+1. Covid-19 = dry cough, fever, sore throat, breathing problem
+2. Diabetes = glucose, insulin, Body Mass Index(BMI), age
+3. Heart Disease = chest pain, Blood Pressure(BP), cholestrol, max Heart Rate(HR)
+
+The feature selection is carefully done under the supervision of a medical science student.
+
+
+After the modeling part the model is deployed using Streamlit library on Streamlit Share so that the app is available for usage for everyone.
